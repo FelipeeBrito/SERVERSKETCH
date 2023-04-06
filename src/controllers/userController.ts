@@ -40,7 +40,7 @@ export async function main(app: FastifyInstance) {
     })
     const {id} = userId.parse(request.params);
     const { name, password, email} = userData.parse(request.body);
-    console.log("************************************************************************"+userId)
+    
     
      await prisma.user.update({
       where:{
