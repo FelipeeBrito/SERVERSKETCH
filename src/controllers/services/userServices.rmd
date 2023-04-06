@@ -1,0 +1,55 @@
+// import { PrismaClient } from '@prisma/client'
+
+// const prisma = new PrismaClient();
+// // Função que retorna todos os usuários
+// export const getAllUsers = async () => {
+//   const users = await prisma.user.findMany();
+//   return users;
+// };
+
+// // Função que retorna um usuário específico pelo ID
+// export const getUserById = async (id: number) => {
+//     const user = await prisma.user.findUnique({
+//       where: {
+//         id,
+//       },
+//     });
+//     return user;
+//   };
+
+// // Função que cria um novo usuário
+// export const createUser = async (data: {
+//   name: string;
+//   email: string;
+//   password: string;
+// }) => {
+//   const user = await prisma.user.create({
+//     data,
+//   });
+//   return user;
+// };
+
+// // Função que atualiza um usuário existente
+// export const updateUser = async (id: number, data: {
+//   name?: string;
+//   email?: string;
+//   password?: string;
+// }) => {
+//   const user = await prisma.user.update({
+//     where: {
+//       id,
+//     },
+//     data,
+//   });
+//   return user;
+// };
+
+// // Função que exclui um usuário existente
+// export const deleteUser = async (id:number) => {
+//   const user = await prisma.user.delete({
+//     where: {
+//       id,
+//     },
+//   });
+//   return user;
+// };
